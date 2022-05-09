@@ -1,7 +1,11 @@
-cmake_minimum_required ( VERSION 2.6 FATAL_ERROR)   
-project(pcd2bin)                                        #½¨Á¢µÄ¹¤³ÌÃû
-                                                                      
-find_package(PCL 1.3 REQUIRED)  
+cmake_minimum_required (VERSION 3.0.2)   
+project(pcd2bin)                                        #ï¿½ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½ï¿½ï¿½
+
+## Compile as C++11, supported in ROS Kinetic and newer
+add_compile_options(-std=c++14)
+set(CMAKE_BUILD_TYPE "Debug")
+
+find_package(PCL 1.10 REQUIRED)  
 
 include_directories(${PCL_INCLUDE_DIRS})
 link_directories(${PCL_LIBRARIES_DIRS})

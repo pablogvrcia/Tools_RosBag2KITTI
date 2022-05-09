@@ -1,1 +1,5 @@
-.idea
+/obstacle_detection/CMakefile
+/obstacle_detection/output
+/pcd2bin/CMakefile
+/pcd2bin/pcd
+/pcd2bin/bin
