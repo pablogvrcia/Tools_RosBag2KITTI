@@ -3,7 +3,7 @@
 
 ## Steps ##
 
-### 1. Decode .bag files ###
+### 1. RosBag 2 Pcd ###
 Data files recorded via ROS are usually saved in .bag format. We need to use the ROS system to decode the .bag file. The decoded files include image files(.png) and PointCloud files(.pcd).
 
 * **Build the project**
