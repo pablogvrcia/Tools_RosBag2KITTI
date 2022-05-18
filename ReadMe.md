@@ -8,13 +8,13 @@ Data files recorded via ROS are usually saved in .bag format. We need to use the
 
 * **Build the project**
 	
-	`cd obstacle_detection` 
+	`cd rosbag2pcd` 
 	`./build.sh`
 
 * **Coordinate system transformation(Optional):**The purpose of coordinate system rotation and translation is achieved by adjusting the following parameter values in the file [map_generation_node.cpp](/obstacle_detection/src/map_generation_node.cpp). All rotation parameters are angled and clockwise is positive.
 
 
-* **Decoding:** Run `roscore` on the first console. Then open a new console, run `./devel/lib/ros2kitti/ros2kitti_node`in the */obstacle_detection/CMakefile* directory. Open a new console, run `rosbag play xxx.bag -r 0.1`. The result files are save into the [output](/obstacle_detection/output).
+* **Decoding:** Run `roscore` on the first console. Then open a new console, run `./devel/lib/ros2kitti/ros2kitti_node`in the */rosbag2pcd/CMakefile* directory. Open a new console, run `rosbag play xxx.bag -r 0.1`. The result files are save into the [output](/rosbag2pcd/output).
 > 0.1 in the code means 0.1 times speed. The Speed is determined according to computer io performance. Make sure the timestamps are within +-50ms, otherwise adjust the play speed. 
 
 
