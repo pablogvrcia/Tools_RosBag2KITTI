@@ -1,5 +1,5 @@
-/obstacle_detection/CMakefile
-/obstacle_detection/output
+/rosbag2pcd/CMakefile
+/rosbag2pcd/output
 /pcd2bin/CMakefile
 /pcd2bin/pcd
 /pcd2bin/bin
