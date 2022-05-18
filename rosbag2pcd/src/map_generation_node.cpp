@@ -43,7 +43,7 @@ void MapGenerationNode::lidarCallback(const sensor_msgs::PointCloud2::ConstPtr& 
 	
 	ROS_INFO("get lidar : %lld ms", lidar_delta_time);
 	char s[200];
-	sprintf(s, "/home/pablo/CAPTN/Tools_RosBag2KITTI/obstacle_detection/output/pcd/%06lld.pcd", lidar_index); 
+	sprintf(s, "/home/pablo/CAPTN/Tools_RosBag2KITTI/rosbag2pcd/output/pcd/%06lld.pcd", lidar_index); 
 	++lidar_index;
 	
 	camera_captured = false;
@@ -83,7 +83,7 @@ void MapGenerationNode::cameraCallback(const sensor_msgs::ImageConstPtr& camera)
 
 	ROS_INFO("get camera: %lld ms", camera_delta_time);
 	char s[200];
-	sprintf(s, "/home/pablo/CAPTN/Tools_RosBag2KITTI/obstacle_detection/output/png/%06lld.png", lidar_index-1); 
+	sprintf(s, "/home/pablo/CAPTN/Tools_RosBag2KITTI/rosbag2pcd/output/png/%06lld.png", lidar_index-1); 
 
 	cv_bridge::CvImagePtr cv_ptr;
 	try
