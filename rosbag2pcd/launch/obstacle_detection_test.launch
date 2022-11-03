@@ -1,4 +1,0 @@
-<launch>
-    <node pkg = "rosbag2pcd" type = "cloud_preprocess" name = "cloud_preprocess"/>
-    <node pkg = "rosbag2pcd" type = "tank" name = "tank" output = "screen"/>
-</launch>
